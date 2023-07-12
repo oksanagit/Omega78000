@@ -1,0 +1,14 @@
+file "/epics/devel/support/modbus/db/longinInt32.template" { pattern
+{P,           R,                PORT,       OFFSET,       DATA_TYPE,      SCAN}
+#{SIM1:,    LI:UINT16,        CN78x_Word_In,     0,     UINT16,        "I/O Intr"}
+{XF:11BM,    "{LA:Omega}T_RBV",       CN78x_Word_In,        0,     UINT16,        "I/O Intr"}
+{XF:11BM,    "{LA:Omega}SP_RBV",      CN78x_Word_In_SP,     0,     UINT16,        "I/O Intr"}
+}
+
+
+file "/epics/devel/support/modbus/db/longout.template" { pattern
+{P,               R,               PORT,      OFFSET}
+#{SIM1:,        LO:UINT16,        A0_Out_Word,    0}
+{XF:11BM,    "{LA:Omega}SP",    CN78x_Word_Out,    0}
+}
+
